@@ -1,0 +1,48 @@
+.container{
+    margin-left: 10%;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+
+}
+
+.example-card {
+    max-width: 400px;
+    
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+   
+  }
+
+.updateButton button{
+    width: 80px;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-right: 25px;
+    background-color: #568DE4;
+    color: white;
+    margin-top: 80px;
+
+
+}
+
+mat-slider {
+  width: 300px;
+}
+
+.mat-progress-bar{
+  width: 300px;
+
+}
+
+
+.progressBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}

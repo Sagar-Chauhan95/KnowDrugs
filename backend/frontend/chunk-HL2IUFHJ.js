@@ -1,0 +1,1 @@
+import{a}from"./chunk-2RYLMF3U.js";import"./chunk-TYSRKM5B.js";import"./chunk-AZKZJRRS.js";import"./chunk-TEHJRAAM.js";import"./chunk-42T2NVKB.js";import"./chunk-JYTUQL2Z.js";import"./chunk-N2VS3P45.js";import"./chunk-G3XZPYES.js";import"./chunk-Q6FBKUVX.js";import"./chunk-WXI33M2S.js";import"./chunk-BYU4RTY2.js";export{a as MedicinesComponent};

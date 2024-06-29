@@ -1,0 +1,44 @@
+.container{
+    width: 900px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #CBDCF6;
+    
+}
+.title{
+   color: brown;
+}
+.file{
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+.example-full-width{
+    width: 400px;
+    padding: 10px;
+    color: brown;
+   
+}
+input{
+    color: brown;
+   
+}
+
+button{
+    margin-left: 40%;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    padding: 4px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #0D6EFD;
+    color: white;
+
+}
+

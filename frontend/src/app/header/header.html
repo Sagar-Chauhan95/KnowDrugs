@@ -1,0 +1,39 @@
+<div class="header">
+  <div class="first">
+    <div><img src="../../logo.jpeg" alt="logo" ></div>
+
+      <div><a [routerLink]="['', 'medicines']" style="text-decoration: none;" >A-Z Drugs</a></div>
+     
+    @if(authService.is_logged_in()){
+      <div style="display: flex; gap: 50px;">
+        @if(authService.is_logged_in()){
+        <div ><a [routerLink]="['', 'medicines','add']" style="text-decoration: none;">Add Drugs</a></div>
+        }
+        <div><a [routerLink]="['','medicine']" (click)="logout()" style="text-decoration: none;">LogOut</a></div>
+
+      </div>
+    
+    }@else {
+    <div><a [routerLink]="['','signin']" style="text-decoration: none;">SignIn</a></div>
+    }
+
+  </div>
+  @if(medicationService.$show()){
+    <div class="second" >
+
+      <!-- <div>Find Drugs</div>
+      <div>
+        <input type="text" placeholder="Enter a drug name">
+      </div> -->
+
+      <p >Browse all medications</p>
+      @for(letter of letters; track letter){
+        
+        <button [routerLink]="['', 'medicines_letters']" [queryParams]="{text: letter}" (click)="showMedicine(letter)" >{{letter}}</button>
+      }
+  
+    </div>
+
+  }
+ 
+</div>
