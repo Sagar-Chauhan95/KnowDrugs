@@ -50,4 +50,9 @@ export const medicineRoutes: Routes = [
         loadChildren: () =>
             import('../reviews/review.routes').then((r) => r.reviewRoutes),
     },
+
+    {
+        path: 'newmedication',
+        loadComponent: () => import('./newMedication/new-medicines.component').then(c => c.NewMedicinesComponent)
+    }
 ];

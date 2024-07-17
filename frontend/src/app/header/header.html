@@ -1,8 +1,12 @@
 <div class="header">
   <div class="first">
-    <div><img src="../../logo.jpeg" alt="logo" ></div>
+    <div class="logo"><img src="../../logo.jpeg" alt="logo" >
+      <p> <b>Drugs.com</b> <br> <span>Know more. Be sure.</span> </p>
+      
+    </div>
 
       <div><a [routerLink]="['', 'medicines']" style="text-decoration: none;" >A-Z Drugs</a></div>
+      <div><a [routerLink]="['', 'medicines', 'newmedication']" style="text-decoration: none;" >New Drugs</a></div>
      
     @if(authService.is_logged_in()){
       <div style="display: flex; gap: 50px;">
@@ -21,11 +25,6 @@
   @if(medicationService.$show()){
     <div class="second" >
 
-      <!-- <div>Find Drugs</div>
-      <div>
-        <input type="text" placeholder="Enter a drug name">
-      </div> -->
-
       <p >Browse all medications</p>
       @for(letter of letters; track letter){
         
@@ -35,5 +34,12 @@
     </div>
 
   }
+
+  <div class="search">
+    <b>Find Drugs & Conditions</b>
+      <div>
+        <input type="text" placeholder="Enter a drug name">
+      </div>
+    </div>
  
 </div>

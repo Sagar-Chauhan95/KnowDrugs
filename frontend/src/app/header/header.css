@@ -2,7 +2,7 @@
     font-size: 22px;
     padding: 10px;
     width: 100%;
-    height: 150px;
+    height: 210px;
     background-color: #F7F8F9;
     align-items: center;
 }
@@ -61,3 +61,41 @@ button{
     align-content: center;
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo p{
+    margin-top:60px;
+    font-weight: 105px;
+   
+}
+
+.logo p b{
+    font-size: 40px;
+    color: #24366F;
+}
+
+.logo p span{
+    color: #249CD8;
+}
+
+.search{
+    justify-content: center;
+    margin-left: 45%;
+    margin-top: 30px;
+
+}
+
+.search b{
+    font-size:35px;
+    margin-left: -90px;
+
+}
+.search input{
+    width: 600px;
+    height: 50px;
+}
